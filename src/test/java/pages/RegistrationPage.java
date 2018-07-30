@@ -36,7 +36,7 @@ public class RegistrationPage {
 	@FindBy(xpath="//div[@class='license-info']/span")
 	public WebElement checkBoxStar;
 	
-	//
+	
 
 }
 
