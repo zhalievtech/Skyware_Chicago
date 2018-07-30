@@ -14,8 +14,7 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 import pages.HomePage;
-
-
+import pages.RegistrationPage;
 import utilities.Driver;
 import utilities.ConfigReader;
 
@@ -43,6 +42,13 @@ public class SmokeTest {
 		
 		
 	
+RegistrationPage rp = new RegistrationPage();
+rp.countrySelect.isDisplayed();
+rp.address.isDisplayed();
+rp.citySelect.isDisplayed();
+
+
+
 
 		
 		
