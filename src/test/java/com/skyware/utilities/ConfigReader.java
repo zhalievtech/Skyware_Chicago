@@ -1,4 +1,4 @@
-package utilities;
+package com.skyware.utilities;
 
 import java.io.FileInputStream;
 import java.util.Properties;
@@ -11,7 +11,7 @@ public class ConfigReader {
 
 		try {
 			configFile = new Properties();
-			String path = "\\Users\\Ai\\eclipse-workspace\\SkyWareChicago5\\config.properties";
+			String path = "/Users/hasanistan/git/Skyware_Chicago5/config.properties";
 			FileInputStream input = new FileInputStream(path);
 
 			
