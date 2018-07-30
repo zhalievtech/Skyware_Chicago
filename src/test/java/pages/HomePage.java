@@ -16,4 +16,6 @@ public class HomePage {
 	public WebElement registerButton;
 	
 	
+	
+	
 }

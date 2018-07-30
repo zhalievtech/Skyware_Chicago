@@ -14,23 +14,22 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 import pages.HomePage;
-
-
+import pages.RegistrationPage;
 import utilities.Driver;
 import utilities.ConfigReader;
 
 public class SmokeTest {
 
-	@BeforeClass
-	
+	@BeforeMethod
+
 	public void setUp() {
 		Driver.getDriver().get(ConfigReader.getProperty("url"));
-		
+
 		Driver.getDriver().manage().window().maximize();
 		Driver.getDriver().manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-		
-		
+
 	}
+
 	@Test
 	public void checkHomePageTitle() {
 		String actualTitle = Driver.getDriver().getTitle();
@@ -39,16 +38,22 @@ public class SmokeTest {
 		
 		HomePage hp= new HomePage();
 		hp.registerButton.click();
-		
-		
-		
-	
-
-		
-		
 	}
-	
-
-	
-
+		
+	@Test
+	public void BasicInfo() throws InterruptedException {
+			RegistrationPage rp = new RegistrationPage();
+			
+			rp.emailBox.isDisplayed();
+			rp.passwordBox.isDisplayed();
+			rp.confirmPasswordBox.isDisplayed();
+			  
+			      
+			
+		}
+			         	
 }
+
+		
+		
+	
