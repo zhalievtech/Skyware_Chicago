@@ -40,8 +40,7 @@ public class SmokeTest {
 		hp.registerButton.click();
 	    
 		 
-		RegistrationPage  registPage =new RegistrationPage();
-		 registPage.PhoneNumber.getText();
+		
 		
 	
 

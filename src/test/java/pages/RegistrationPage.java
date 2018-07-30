@@ -12,16 +12,8 @@ public class RegistrationPage {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
 
-	
-	@FindBy( xpath="//select[@id='stateSelect]")
-	public WebElement StateProvince;
-   
-	
-	@FindBy(xpath="//input[@id='profile_zip']")
-	public WebElement ZipCode;
-	
-	@FindBy(xpath = "//input[@id='profile_phone']")
-	public WebElement PhoneNumber;
+	@FindBy(xpath ="//input[@id='licenseAccepted']")
+			public WebElement checkbox;
 	
 	
 }
