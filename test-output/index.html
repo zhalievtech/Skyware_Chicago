@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Ai\AppData\Local\Temp\testng-eclipse-1114684236\testng-customsuite.xml</span>
+                    <span>testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,6 +103,16 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.skyware.tests.SmokeTest" hash-for-method="checkHomePageTitle">checkHomePageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.skyware.tests.SmokeTest" hash-for-method="verifyMyAccountPageFields">verifyMyAccountPageFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.skyware.tests.SmokeTest" hash-for-method="verifyRegistrationPageFields">verifyRegistrationPageFields</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -130,12 +140,26 @@
                   <span class="method-name">checkHomePageTitle</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMyAccountPageFields">
+                  </a> <!-- verifyMyAccountPageFields -->
+                  <span class="method-name">verifyMyAccountPageFields</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistrationPageFields">
+                  </a> <!-- verifyRegistrationPageFields -->
+                  <span class="method-name">verifyRegistrationPageFields</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Ai\AppData\Local\Temp\testng-eclipse-1114684236\testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/50/m5mqcmc51gvbgk0ppwjn7jfm0000gn/T/testng-eclipse-1691472770/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -184,16 +208,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'checkHomePageTitle')
+data.setCell(0, 1, 'verifyMyAccountPageFields')
 data.setCell(0, 2, 'com.skyware.tests.SmokeTest')
-data.setCell(0, 3, 1433);
+data.setCell(0, 3, 6443);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyRegistrationPageFields')
+data.setCell(1, 2, 'com.skyware.tests.SmokeTest')
+data.setCell(1, 3, 1791);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'checkHomePageTitle')
+data.setCell(2, 2, 'com.skyware.tests.SmokeTest')
+data.setCell(2, 3, 13);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -226,7 +258,15 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">checkHomePageTitle</span>
-                <span class="method-start">8333 ms</span>
+                <span class="method-start">4111 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyRegistrationPageFields</span>
+                <span class="method-start">4126 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMyAccountPageFields</span>
+                <span class="method-start">5918 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

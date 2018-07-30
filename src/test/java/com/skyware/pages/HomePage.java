@@ -1,10 +1,10 @@
-package pages;
+package com.skyware.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import utilities.Driver;
+import com.skyware.utilities.Driver;
 
 public class HomePage {
 	
@@ -15,5 +15,7 @@ public class HomePage {
 	@FindBy(linkText="Register")
 	public WebElement registerButton;
 	
+	@FindBy(xpath="//a[@class='button login']")
+	public WebElement loginButton;
 	
 }

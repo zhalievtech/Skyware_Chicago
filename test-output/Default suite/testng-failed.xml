@@ -5,8 +5,8 @@
     <classes>
       <class name="com.skyware.tests.SmokeTest">
         <methods>
+          <include name="verifyMyAccountPageFields"/>
           <include name="setUp"/>
-          <include name="checkHomePageTitle"/>
         </methods>
       </class> <!-- com.skyware.tests.SmokeTest -->
     </classes>
