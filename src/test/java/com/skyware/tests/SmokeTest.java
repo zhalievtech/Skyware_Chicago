@@ -14,8 +14,7 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 import pages.HomePage;
-
-
+import pages.RegistrationPage;
 import utilities.Driver;
 import utilities.ConfigReader;
 
@@ -39,8 +38,10 @@ public class SmokeTest {
 		
 		HomePage hp= new HomePage();
 		hp.registerButton.click();
-		
-		
+	    
+		 
+		RegistrationPage  registPage =new RegistrationPage();
+		 registPage.PhoneNumber.getText();
 		
 	
 
